@@ -1,6 +1,5 @@
 import random
 random.seed(696969)
-champ_score = {}
 with open("champs.txt","r") as f:
     stuff = f.read().split("\n")
     stuff = stuff[:-1]
@@ -32,7 +31,3 @@ for tier in range(len(tiers)):
     print("%s TIER:" % (tier_names[tier]))
     for champ in tiers[tier]:
         print("\t",champ)
-
-#for champ in stuff:
-#    champ_score[champ] = random.randrange(0, 155)
-
